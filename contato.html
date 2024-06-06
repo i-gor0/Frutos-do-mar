@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Blog</title> 
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./stylesc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header class="conteiner">
+            <nav>
+                <a href="./index.html">
+                    <img class="home" src="./assets/house-32.png" alt="">
+                </a>
+                <a href="./sobre.html">
+                    <li>sobre</li>
+                </a>
+                <div class="input-wrapper">
+                    <input id="search" type="text">
+                   <img class="lupa" src="./assets/lupa.png" alt="">
+                </div>
+                <a href="./biblioteca.html">
+                    <li> biblioteca </li>
+                </a>
+                <a href="./contato.html">
+                    <li>contato</li>
+                </a>
+            </nav>
+        </header>
+        <div id="texto">
+            <h1>
+                contato
+            </h1>
+            <h1 class="fundoh1">
+                contato
+            </h1>
+            
+            <h2>
+                me encontre em:
+            </h2>
+            <h2 class="fundoh2">
+                me encontre em:
+            </h2>
+        </div>
+        <div class="cards" id="cards">
+            <img id="img1" src="./assets/icons8-instagram.svg" alt="" class="img" onclick="showPopAndMove('popinsta')">
+            <img src="./assets/gmail-icon-logo.svg" alt="" class="img1" onclick="showPopAndMove('popgmail')">
+            <img src="./assets/wha.webp" alt="" class="img2" onclick="showPopAndMove('popwha')">
+            <img src="./assets/git.png" alt="" class="img3" onclick="showPopAndMove('pop')">
+        </div>
+        <div class="pop" id="pop">
+            <img src="./assets/sair.png" alt="" id="sair" onclick="fecharPop('pop')">
+            <p><img src="./assets/github.png" alt="" class="hub"></p>
+            <h3>
+                github
+                <a href="https://github.com/i-gor0" target="_blank" class="sub">https://github.com/i-gor0</a>
+            </h3>
+        </div>
+        <div class="pop" id="popinsta">
+            <img src="./assets/sair.png" alt="" id="sair" onclick="fecharPop('popinsta')">
+            <p><img src="./assets/icons8-instagram.svg" alt="" class="hub"></p>
+            <h3>
+                instagram
+                <a href="https://www.instagram.com/igor.antt/" target="_blank" class="sub">https://www.instagram.com/ig</a>
+            </h3>            
+        </div>
+        <div class="pop" id="popgmail">
+            <img src="./assets/sair.png" alt="" id="sair" onclick="fecharPop('popgmail')">
+            <p><img src="./assets/gmail-icon-logo.svg" alt="" class="hub"></p>
+            <h3>
+                gmail
+                <a class="sub">igor.antuness28h@gmail.com</a>
+            </h3>
+        </div>
+        <div class="pop" id="popwha">
+            <img src="./assets/sair.png" alt="" id="sair" onclick="fecharPop('popwha')">
+            <p><img src="./assets/wha.webp" alt="" class="hub" id="wha"></p>
+            <h3>
+                whatsapp
+                <p class="sub">número: +55 11 XXXXXX-XXXXX</p>
+            </h3>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
